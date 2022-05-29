@@ -23,13 +23,21 @@ function lakukanLooping(arrPegawai) {
 
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
-  let hasilLooping = null;
+
+  let hasilLooping;
+  for (hasilLooping of dataYangAkanDilooping ){
+    let namaDepan = hasilLooping.namaDepan;
+    let namaBelakang = hasilLooping.namaBelakang;
+
+    let namaLengkap = namaDepan + ' ' + namaBelakang;
+    console.log(namaLengkap);
+  }
 
   /*
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
       yang berisi jumlah pria dari masing masing pegawai
   */
-  let jumlahPria = null;
+  let jumlahPria = dataYangAkanDilooping.jenisKelamin;
 
   /*
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
